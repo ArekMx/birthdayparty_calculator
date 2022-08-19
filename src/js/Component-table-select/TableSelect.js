@@ -5,8 +5,15 @@ import Slider from 'react-smooth-range-input';
 import { countTotalTableSelect } from "./functions";
 import jubilat_gratis from '../../images/jubilat_gratis.svg'
 
+import Background from '../../images/wallpapper_gold_mobile_1.png'
 
 export const ComponentTableSelect =({numOfkids, onShow}) => {
+
+  const sectionBackgoundStyle = {
+    backgroundSize: "cover",
+    backgroundRepeat: "noRepeat",
+    backgroundImage: `url(${Background})`
+} 
     
   const [pricePerKid, setPricePerKid] = useState('');
   const [numberOfKids, setNumberOfKids] = useState('7');
@@ -95,7 +102,7 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
 
   
   return (
-    <div className="main-count">
+    <div style={sectionBackgoundStyle} className="main-count">
             <div>
               <p className="title-header">Wybierz dzień tygodnia:</p>
             </div>

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import Slider from 'react-smooth-range-input';
+import Background from '../../images/wallpapper_gold_mobile_3.png'
 
 export const ComponentAtractions =({onUp}) => {
     
@@ -39,9 +40,15 @@ export const ComponentAtractions =({onUp}) => {
     // }, [pigtails]);  
 
     
+    const sectionBackgoundStyle = {
+        backgroundSize: "cover",
+        backgroundRepeat: "noRepeat",
+        backgroundImage: `url(${Background})`
+    }  
+
     return (
         <>
-        <div className="atractions">
+        <div style={sectionBackgoundStyle} className="atractions">
             <p className="sliders-title">Ustaw ilość dzieci, które skorzystają z poniższych atrakcji <br></br>(płatne od dziecka):</p>
             <div className="sliders">
             <div className="atractions-slider">
