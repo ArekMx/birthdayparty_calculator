@@ -4,7 +4,7 @@
 
 .atractions {
     margin-top: 1rem;
-    background-image: url('../../images/wallpapper_gold_mobile_2.png');
+    // background-image: url('../../images/wallpapper_gold_mobile_2.png');
     background-size: cover;
     background-repeat: no-repeat;
     @include shadowBoxes($dark-green);
@@ -12,7 +12,7 @@
         @include titleBoxes;
     }
     @include desktop-main {
-        background-image: url('../../images/wallpapper_gold_desktop_2.png');
+        // background-image: url('../../images/wallpapper_gold_desktop_2.png');
     }
     .sliders {
         @include displayFlex(start);

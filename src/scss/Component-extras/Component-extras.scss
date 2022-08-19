@@ -4,11 +4,11 @@
 .extras {
   margin: 1rem 0;
   @include shadowBoxes ($orange-pastel);
-  background-image: url('../../images/wallpapper_gold_mobile_3.png');
+  // background-image: url('../../images/wallpapper_gold_mobile_3.png');
   background-size: cover;
   background-repeat: no-repeat;
   @include desktop-main {
-    background-image: url('../../images/wallpapper_gold_desktop_3.png');
+    // background-image: url('../../images/wallpapper_gold_desktop_3.png');
 }
   .extras-title {
     @include titleBoxes;

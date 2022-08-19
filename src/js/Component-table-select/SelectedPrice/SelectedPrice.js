@@ -1,3 +1,4 @@
+import React from "react"
 
 export const SelectedPrice =({price, title, min, onAdd, currentPrice, onShow}) => {
     
