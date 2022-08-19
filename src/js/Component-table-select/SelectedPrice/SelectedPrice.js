@@ -1,5 +1,4 @@
 
-
 export const SelectedPrice =({price, title, min, onAdd, currentPrice, onShow}) => {
     
     const styleOnClick =(x) =>{
