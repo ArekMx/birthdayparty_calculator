@@ -4,6 +4,8 @@ import { ComponentTableSelect } from "./js/Component-table-select/TableSelect";
 import { ComponentExtras } from './js/Component-extras/ComponentExtras';
 import logo from "./images/logo.svg";
 import calculator from "./images/calculator.svg";
+import Background from './images/wallpapper_gold_mobile_2.png'
+import Background2 from './images/wallpapper_gold_mobile.png'
 
 export function App() {
 
@@ -41,13 +43,25 @@ export function App() {
     setShowAll(value)
   };
 
+  const styleAtractions = {
+    backgroundSize: "cover",
+    backgroundRepeat: "noRepeat",
+    backgroundImage: `url(${Background})`,
+  } 
+
+  const styleExtras = {
+    backgroundSize: "cover",
+    backgroundRepeat: "noRepeat",
+    backgroundImage: `url(${Background2})`,
+  } 
+
   return (
     <div className="App container">
       <div className='logos'>
         <img className={"logo"} src={logo} alt={"Sala_Zabaw_Piotruś"}/>
         <img className={"calculator"} src={calculator} alt={"Kalkulator_urodzin"}/>
       </div>
-      <header className="App-header">
+      <header style={styleAtractions} className="App-header">
         <ComponentTableSelect numOfkids={totalAll} onShow={handleShow}/>
       </header>
       {
@@ -56,7 +70,7 @@ export function App() {
         <section>
         <ComponentAtractions onUp={x=>setTotalAtractions(x)}/>
         </section>
-        <section className="extras">
+        <section style={styleExtras} className="extras">
         <ComponentExtras onAddTotalExtras={x=>setTotalExtras(x)} onAddTableware={x=>setExtraPriceEkoTableware(x)}/>
         </section>
 

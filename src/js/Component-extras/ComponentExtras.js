@@ -1,15 +1,11 @@
 import { Extra } from './Extra/Extra'
 import { ExtraBaloons } from './Extra-baloons/ExtraBaloons';
 import React, {useState, useEffect} from "react"
-import Background from '../../images/wallpapper_gold_mobile_2.png'
+
 
 export const ComponentExtras =({onAddTotalExtras, onAddTableware}) => {
     
-    const sectionBackgoundStyle = {
-        backgroundSize: "cover",
-        backgroundRepeat: "noRepeat",
-        backgroundImage: `url(${Background})`
-    } 
+ 
 
     const extra = {
         assistant: {
@@ -63,7 +59,7 @@ export const ComponentExtras =({onAddTotalExtras, onAddTableware}) => {
     onAddTableware(extraPriceEkoTableware);
 
     return (
-            <div style={sectionBackgoundStyle}>
+            <div>
                 <div>
                     <p className="extras-title">Wybierz extra dodatki:</p>
                 </div>
