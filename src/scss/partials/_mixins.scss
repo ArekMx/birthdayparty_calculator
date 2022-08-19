@@ -1,0 +1,101 @@
+@import './colors';
+
+
+@mixin desktop-main {
+    @media (min-width: 1500px) {
+      @content
+    }
+}
+
+  
+@mixin shadowBoxes($background) {
+    box-shadow: 0 3px 8px 4px $blue_sky;
+    border-radius: 20px;
+    background-color: $background;
+}
+
+@mixin marginBoxes {
+    margin: 1rem;
+}
+
+@mixin tablet-main {
+    @media (min-width: 500px) {
+        @content
+      }
+}
+
+@mixin titleBoxes {
+    display: inline-block;
+    margin: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $purple;
+    text-shadow: #ffff01 0.1em 0.1em 0.2em;
+}
+@mixin displayFlex($justify-content) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+}
+
+@mixin wallPaperBoxes ($path) {
+    background-image: $path;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin box_shadow ($level) {
+    @if $level == 0 {
+        box-shadow: none;
+    } @else if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    } @else if $level == 2 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    } @else if $level == 3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    } @else if $level == 4 {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+    } @else if $level == 5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+    }
+}
+  
+@mixin btn ($color, $backGroundColorHover) {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: .5rem 1.7rem;
+    margin: .5rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: relative;
+    will-change: transform;
+    letter-spacing: .05rem;
+    position: relative;
+    background: $white;
+    color: $color;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    border-radius: .5rem;
+    font-family: 'Itim', cursive;
+    font-size: 2rem;
+    
+    @include box_shadow(5);
+    // &:hover {
+    //   color: $yellow;
+    //   background-color: $backGroundColorHover;
+    // }
+}
+
+@mixin icon ($backgroundColor, $iconColor) {
+    width: 1.5em;
+    height: 1.5em;
+    background: $backgroundColor;
+    border: 4px solid $backgroundColor;
+    opacity: 1;
+    border-radius: 50%;
+    color: $iconColor;
+}

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react"
-// import {SelectedPrice} from './SelectedPrice/SelectedPrice';
+import {SelectedPrice} from './SelectedPrice/SelectedPrice';
 import Slider from 'react-smooth-range-input';
 
 import { countTotalTableSelect } from "./functions";
-// import jubilat_gratis from '../../images/jubilat_gratis.svg'
+import jubilat_gratis from '../../images/jubilat_gratis.svg'
 
 
 export const ComponentTableSelect =({numOfkids, onShow}) => {
@@ -99,7 +99,7 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
             <div>
               <p className="title-header">Wybierz dzień tygodnia:</p>
             </div>
-            {/* <div className="selectedPrice">
+            <div className="selectedPrice">
               <div>
                 <SelectedPrice price={prices.week.price} title={prices.week.title} min={prices.week.min} onAdd={setBtn} currentPrice={pricePerKid} onShow={x=>onShow(x)}/>
               </div>
@@ -109,7 +109,7 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
               <div>
                 <SelectedPrice price={prices.weekend.price} title={prices.weekend.title} min={prices.weekend.min} onAdd={setBtn} currentPrice={pricePerKid} onShow={x=>onShow(x)}/>
               </div>
-            </div> */}
+            </div>
             
             <div>
             {/* {
@@ -171,7 +171,7 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
             <div className="info-promotion"> 
               {info ? 
               <div>
-                {/* <img src={jubilat_gratis} alt="Icon_Jubilat_gratis"/> */}
+                <img src={jubilat_gratis} alt="Icon_Jubilat_gratis"/>
                 <p className="info-promotion-text">{text}</p>
               </div>
                : null}

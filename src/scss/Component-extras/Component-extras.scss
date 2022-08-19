@@ -1,0 +1,68 @@
+@import '../partials/colors';
+@import '../partials/mixins';
+
+.extras {
+  margin: 1rem 0;
+  @include shadowBoxes ($orange-pastel);
+  background-image: url('../../images/wallpapper_gold_mobile_3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include desktop-main {
+    background-image: url('../../images/wallpapper_gold_desktop_3.png');
+}
+  .extras-title {
+    @include titleBoxes;
+    width: 90%;
+    
+  }
+
+  .assistant,
+  .numberBaloon,
+  .piniata,
+  .ekoTableware {
+    display: inline-block;
+    margin: 1rem
+  }
+
+  .bouquet {
+    position: relative;
+    width: 80%;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    @include shadowBoxes(rgba(162, 0, 255, 0.7));
+      .bouquet-title {
+        display: inline-block;
+        margin: 15px;
+        font-size: 3rem;
+        // font-weight: bold;
+        color: $gold;
+      }
+      .bouquet-btns {
+        @include displayFlex(center);
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        .btn-bouquet {
+          margin: 1rem
+        }
+      }
+  }
+  
+}
+
+.btn-assistant {
+    @include btn($olivedrab, $olivedrab);
+}
+
+.btn-baloons {
+    @include btn($D, $D);
+}
+
+.btn-number {
+    @include btn($olivedrab, $olivedrab);
+}
+
+.btn-pinata {
+  @include btn($olivedrab, $olivedrab);
+}

@@ -1,3 +1,179 @@
-h1 {
-    color: red;
+/* --- Imports from app --- */
+@import './scss/SelectedPrice/SelectedPrice.scss';
+@import './scss/Component-atractions/Component-atractions.scss';
+@import './scss/Component-extras/Component-extras.scss';
+
+/* --- Imports from partials here --- */
+@import './scss/partials/root';
+@import './scss/partials/colors';
+
+
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $blue;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+@import "./scss/partials/mixins";
+@import "./scss/partials/colors";
+@import "./scss/partials/root";
+
+.App {
+	text-align: center;
+
+	.logos {
+		display: flex;
+		margin-bottom: 15px;
+		.logo {
+			width: 40%;
+			@include desktop-main {
+				width: 15%;
+				position: absolute;
+				left: 2%;
+				top: 5%;
+			}
+		}
+		.calculator {
+			width: 50%;
+			margin-left: 30px;
+			@include desktop-main {
+				width: 15%;
+				position: absolute;
+				left: 2%;
+				top: 20%;
+			}
+		}
+	}
+
+	.App-header {
+		.main-count {
+			@include displayFlex(center);
+			flex-direction: column;
+		}
+		.selectedPrice {
+			margin-bottom: 30px;
+		}
+
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		color: $dark-red;
+		background-image: url("../images/wallpapper_gold_mobile_1.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		@include shadowBoxes($green);
+		.title-header {
+			margin-bottom: 0;
+			@include titleBoxes;
+		}
+	}
+
+	.info-promotion {
+		margin: 10px 20px;
+		position: relative;
+		border-radius: 20px;
+		background-color: rgba(162, 0, 255, 0.7);
+		.info-promotion-text {
+			font-size: 2rem;
+			color: $blue_lightsaber;
+			margin: 1rem;
+			padding: 1rem;
+			@include desktop-main {
+				font-size: 2.5rem;
+			}
+		}
+		@include desktop-main {
+			margin: 10px 50px;
+		}
+	}
+
+	.count {
+		width: 90%;
+		font-size: 2rem;
+		margin-bottom: 30px;
+		.slider-title {
+			color: $yellow;
+			font-size: 2.5rem;
+			margin: 1rem;
+		}
+		.count-slider {
+			margin: 1rem 2rem;
+		}
+
+		@include shadowBoxes(rgba(162, 0, 255, 0.7));
+	}
+
+	.total {
+		margin: auto;
+		padding: 0.5rem;
+		font-size: 1.5rem;
+		max-width: 600px;
+		color: $gold;
+		position: sticky;
+		bottom: 0;
+		@include displayFlex(space-between);
+		@include shadowBoxes($D);
+		.total__text {
+			display: inline;
+			padding: 5px;
+		}
+		.total__price {
+			width: 200px;
+		}
+	}
+}
+
+.center {
+	position: relative;
+	top: 20%;
+}
+
+.label__checkbox {
+	cursor: pointer;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	background: white;
+	transition: border 0.3s ease;
+	i.icon {
+		opacity: 0.2;
+		transition: opacity 0.3s 0.1s ease;
+		-webkit-text-stroke: 3px rgba(0, 0, 0, 0.5);
+	}
+
+	// &:hover {
+	//   border: 5px solid rgba(0,0,0,0.2);
+	// }
+}
+
+.label__checkbox__extrabaloons {
+	cursor: pointer;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	// border: 5px solid rgba(0,0,0,0.1);
+	// background: white;
+	transition: border 0.3s ease;
+	// i.icon {
+	//   opacity: 0.2;
+	//   transition: opacity .3s .1s ease;
+	//   -webkit-text-stroke: 3px rgba(0, 0, 0, 0.5);
+	// }
+
+	// &:hover {
+	//   border: 5px solid rgba(0,0,0,0.2);
+	// }
+}
+
+.label__checkbox__checked__extra {
+	@include icon(#6b8e23, yellow);
 }

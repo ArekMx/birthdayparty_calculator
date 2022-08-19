@@ -1,0 +1,48 @@
+@import '../partials/mixins';
+@import '../partials/colors';
+
+
+.atractions {
+    margin-top: 1rem;
+    background-image: url('../../images/wallpapper_gold_mobile_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include shadowBoxes($dark-green);
+    .sliders-title {
+        @include titleBoxes;
+    }
+    @include desktop-main {
+        background-image: url('../../images/wallpapper_gold_desktop_2.png');
+    }
+    .sliders {
+        @include displayFlex(start);
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 15px;
+        .atractions-slider {
+            width: 250px;
+            letter-spacing: 1;
+            align-items: center;
+            margin: 15px;
+            @include shadowBoxes(rgba(162, 0, 255, 0.7));
+            border-radius: 2rem;
+            color: $gold;
+            
+
+            .atractions-title {
+                display: inline-block;
+                margin: .25rem;
+                font-size: 2rem;
+            }
+        }
+        @include tablet-main {
+            @include displayFlex(center);
+        }
+    }
+    .total-atractions {
+        display: inline-block;
+        margin: 5rem 0;
+        color: $gold;
+    }
+
+}
