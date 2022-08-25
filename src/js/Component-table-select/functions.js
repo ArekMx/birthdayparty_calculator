@@ -5,7 +5,7 @@ export const countTotalTableSelect= (numberOfKids, pricePerKid, setTotal, setInf
 
 
 
-    if (numberOfKids > 9 && pricePerKid === "38") {
+    if (numberOfKids > 10 && pricePerKid === "42") {
         setTotal((numberOfKids * pricePerKid) - pricePerKid);
         setInfo(true);
         setText("Promocja! Od poniedziałku do piątku Jubilat gratis! Nie płacisz za JEDNO dziecko!");
@@ -13,7 +13,7 @@ export const countTotalTableSelect= (numberOfKids, pricePerKid, setTotal, setInf
           setTotal((numberOfKids * pricePerKid) - pricePerKid*2);
           setText("Promocja! Od poniedziałku do piątku Jubilat i Gość gratis! Nie płacisz za DWÓJKĘ dzieci!");
         }
-      } else if (numberOfKids > 9 && pricePerKid === "42") {
+      } else if (numberOfKids > 10 && pricePerKid === "45") {
         setTotal((numberOfKids * pricePerKid) - pricePerKid);
         setInfo(true);
         setText("Promocja! Od poniedziałku do piątku Jubilat gratis! Nie płacisz za JEDNO dziecko!");

@@ -22,12 +22,12 @@ export function App() {
     let productOfNumPrice = numOfKids * costPerKid;
     let sumOfTotalAtractExtras = totalAtractions + totalExtras;
 
-    if (numOfKids > 9 && moneyPerKid === "38") {
+    if (numOfKids > 10 && moneyPerKid === "42") {
         setTotal((productOfNumPrice - costPerKid) + sumOfTotalAtractExtras);
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
         }
-      } else if (numOfKids > 9 && moneyPerKid === "42") {
+      } else if (numOfKids > 10 && moneyPerKid === "45") {
         setTotal((productOfNumPrice - costPerKid) + sumOfTotalAtractExtras);
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
@@ -60,6 +60,9 @@ export function App() {
       <div className='logos'>
         <img className={"logo"} src={logo} alt={"Sala_Zabaw_Piotruś"}/>
         <img className={"calculator"} src={calculator} alt={"Kalkulator_urodzin"}/>
+        <div>
+          <h1 style={{color: "yellow"}}>Aktualizacja: 25.08.2022r.</h1>
+        </div>
       </div>
       <header style={styleAtractions} className="App-header">
         <ComponentTableSelect numOfkids={totalAll} onShow={handleShow}/>
@@ -76,12 +79,14 @@ export function App() {
 
         <section className="total">
         <div className="total__text">
-          <h1 >Łączny koszt imprezy urodzinowej:</h1>
+          <h1 >Łączny koszt imprezy urodzinowej w Sali Zabaw Piotruś:</h1>
         </div>
         <div className="total__price">
           <h1>{total} zł</h1>
         </div>
+       
         </section>
+        
         </>  
         ) : null
       }
