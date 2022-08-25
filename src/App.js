@@ -61,8 +61,8 @@ export function App() {
         <img className={"logo"} src={logo} alt={"Sala_Zabaw_Piotruś"}/>
         <img className={"calculator"} src={calculator} alt={"Kalkulator_urodzin"}/>
       </div>
-      <div>
-        <h1 style={{color: "yellow"}}>Aktualizacja: 25.08.2022r.</h1>
+      <div className="app-version">
+        <p>Aktualizacja: 25.08.2022r.</p>
       </div>
       <header style={styleAtractions} className="App-header">
         <ComponentTableSelect numOfkids={totalAll} onShow={handleShow}/>

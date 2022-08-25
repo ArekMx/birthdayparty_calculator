@@ -52,6 +52,15 @@ body {
 		}
 	}
 
+	.app-version {
+		font-size: 1.5rem;
+		color: $gold;
+		display: flex;
+		@include desktop-main {
+			font-size: 2rem
+		}
+	}
+
 	.App-header {
 		.main-count {
 			@include displayFlex(center);
