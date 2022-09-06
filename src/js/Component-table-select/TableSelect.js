@@ -48,7 +48,7 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
       min: ''
     },
     friday: {
-      price: 45,
+      price: 44,
       title: "Piątek",
       min: ''
     },

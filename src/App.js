@@ -27,7 +27,7 @@ export function App() {
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
         }
-      } else if (numOfKids > 10 && moneyPerKid === "45") {
+      } else if (numOfKids > 10 && moneyPerKid === "44") {
         setTotal((productOfNumPrice - costPerKid) + sumOfTotalAtractExtras);
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
