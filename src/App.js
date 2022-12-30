@@ -9,6 +9,8 @@ import Background2 from './images/wallpapper_gold_mobile.png'
 
 export function App() {
 
+  const aktualizacja = "Aktualizacja: 01.01.2023r."
+
   const [total, setTotal] = useState('0');
 
   const [totalAtractions, setTotalAtractions] = useState('');
@@ -62,7 +64,7 @@ export function App() {
         <img className={"calculator"} src={calculator} alt={"Kalkulator_urodzin"}/>
       </div>
       <div className="app-version">
-        <p>Aktualizacja: 25.08.2022r.</p>
+        <p>{aktualizacja}</p>
       </div>
       <header style={styleAtractions} className="App-header">
         <ComponentTableSelect numOfkids={totalAll} onShow={handleShow}/>
