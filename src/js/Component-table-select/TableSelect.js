@@ -43,17 +43,17 @@ export const ComponentTableSelect =({numOfkids, onShow}) => {
 
   const prices = {
     week: {
-      price: 42,
+      price: 44,
       title: "Od poniedziałku do czwartku",
       min: ''
     },
     friday: {
-      price: 44,
+      price: 47,
       title: "Piątek",
       min: ''
     },
     weekend: {
-      price: 49,
+      price: 52,
       title: "Sobota, niedziela i święta",
       min: ''
     }
