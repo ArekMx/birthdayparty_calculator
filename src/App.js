@@ -16,10 +16,13 @@ export function App() {
   const [totalAtractions, setTotalAtractions] = useState('');
   const [totalExtras, setTotalExtras] = useState('');  
   const [extraPriceEkoTableware, setExtraPriceEkoTableware] = useState('');
+  const [mainSliderNum, setMainSliderNum] = useState('');
 
   const totalAll = (numOfKids, moneyPerKid) => {
     // console.log(numOfKids);
 
+    setMainSliderNum(numOfKids)
+    
     let costPerKid = Number(moneyPerKid) + Number(extraPriceEkoTableware);
     let productOfNumPrice = numOfKids * costPerKid;
     let sumOfTotalAtractExtras = totalAtractions + totalExtras;
@@ -81,12 +84,19 @@ export function App() {
 
         <section className="total">
         <div className="total__text">
-          <h1 >Łączny koszt imprezy urodzinowej w Sali Zabaw Piotruś:</h1>
+          <h1 >Łączny koszt imprezy urodzinowej w Sali Zabaw Piotruś dla {mainSliderNum} dzieci:</h1>
         </div>
         <div className="total__price">
           <h1>{total} zł</h1>
         </div>
-       
+        {/* <div>
+          <div className="total__text">
+            <h1 >Łączna ilość dzieci:</h1>
+          </div>
+          <div className="total__price">
+            <h1>{mainSliderNum}</h1>
+          </div>
+        </div> */}
         </section>
         
         </>  
