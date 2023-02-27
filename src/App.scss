@@ -134,7 +134,7 @@ body {
 		position: sticky;
 		bottom: 0;
 		@include displayFlex(space-between);
-		@include shadowBoxes($D);
+		@include shadowBoxes(#BFA604);
 		.total__text {
 			display: inline;
 			padding: 5px;
