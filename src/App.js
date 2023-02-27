@@ -9,7 +9,7 @@ import Background2 from './images/wallpapper_gold_mobile.png'
 
 export function App() {
 
-  const aktualizacja = "Aktualizacja: 01.01.2023r."
+  const aktualizacja = "Aktualizacja: 01.03.2023r."
 
   const [total, setTotal] = useState('0');
 
@@ -27,12 +27,12 @@ export function App() {
     let productOfNumPrice = numOfKids * costPerKid;
     let sumOfTotalAtractExtras = totalAtractions + totalExtras;
 
-    if (numOfKids > 10 && moneyPerKid === "44") {
+    if (numOfKids > 10 && moneyPerKid === "45") {
         setTotal((productOfNumPrice - costPerKid) + sumOfTotalAtractExtras);
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
         }
-      } else if (numOfKids > 10 && moneyPerKid === "47") {
+      } else if (numOfKids > 10 && moneyPerKid === "49") {
         setTotal((productOfNumPrice - costPerKid) + sumOfTotalAtractExtras);
         if (numOfKids > 21) {
           setTotal((productOfNumPrice - costPerKid*2) + sumOfTotalAtractExtras);
@@ -89,14 +89,6 @@ export function App() {
         <div className="total__price">
           <h1>{total} zł</h1>
         </div>
-        {/* <div>
-          <div className="total__text">
-            <h1 >Łączna ilość dzieci:</h1>
-          </div>
-          <div className="total__price">
-            <h1>{mainSliderNum}</h1>
-          </div>
-        </div> */}
         </section>
         
         </>  
