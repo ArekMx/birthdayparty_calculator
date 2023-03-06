@@ -81,7 +81,7 @@ export const ComponentAtractions =({onUp}) => {
                 {/* <button onClick={()=>{setPigtails(''); setPigtailsMin(0); console.log(pigtailsMin);}}>reset</button> */}
             </div>
             <div className="atractions-slider">
-                <h1 className="atractions-title face-painting ">{atraction.facePainting.title}<br></br>{atraction.facePainting.price zł</h1>
+                <h1 className="atractions-title face-painting ">{atraction.facePainting.title}<br></br>{atraction.facePainting.price} zł</h1>
                 <Slider value={0} min={0} max={30} onChange={(x) => setFacePainting(x)} />
             </div>
             <div className="atractions-slider">
