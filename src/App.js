@@ -9,7 +9,7 @@ import Background2 from './images/wallpapper_gold_mobile.png'
 
 export function App() {
 
-  const aktualizacja = "Aktualizacja: 01.03.2023r."
+  const aktualizacja = "Aktualizacja: 01.09.2023r."
 
   const [total, setTotal] = useState('0');
 
