@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { ComponentAtractions } from "./js/Component-atractions/ComponentAtractions";
 import { ComponentTableSelect } from "./js/Component-table-select/TableSelect";
 import { ComponentExtras } from './js/Component-extras/ComponentExtras';
-// import logo from "./images/logo.svg";
+import logo from "./images/logo.svg";
 import calculator from "./images/calculator.svg";
 import Background from './images/wallpapper_gold_mobile_2.png'
 import Background2 from './images/wallpapper_gold_mobile.png'
@@ -63,7 +63,7 @@ export function App() {
   return (
     <div className="App container">
       <div className='logos'>
-        //<img className={"logo"} src={logo} alt={"Sala_Zabaw_Piotruś"}/>
+        <img className={"logo"} src={logo} alt={"Sala_Zabaw_Piotruś"}/>
         <img className={"calculator"} src={calculator} alt={"Kalkulator_urodzin"}/>
       </div>
       <div className="app-version">
