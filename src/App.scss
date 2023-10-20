@@ -31,15 +31,15 @@ body {
 	.logos {
 		display: flex;
 		margin-bottom: 15px;
-		// .logo {
-		// 	width: 40%;
-		// 	@include desktop-main {
-		// 		width: 15%;
-		// 		position: absolute;
-		// 		left: 2%;
-		// 		top: 5%;
-		// 	}
-		// }
+		.logo {
+			width: 40%;
+			@include desktop-main {
+				width: 15%;
+				position: absolute;
+				left: 2%;
+				top: 5%;
+			}
+		}
 		.calculator {
 			width: 50%;
 			margin-left: 30px;
